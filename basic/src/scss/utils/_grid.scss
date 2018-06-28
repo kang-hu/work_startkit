@@ -28,3 +28,13 @@ $i: 12;
     content: '';
     display: table;
 }
+
+@function vw($px) {
+    $vw-context: (1920 * 0.01);
+    @return ( $px / $vw-context) * 1vw;
+}
+
+@function mvw($px) {
+    $vw-context: (640 * 0.01);
+    @return ( $px / $vw-context) * 1vw;
+}
